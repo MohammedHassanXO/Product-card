@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+
+
+/* .back-position {
+    width: 150px;
+    transform: translate(120%, 90%);
+    z-index: 1;
+}
+
+.middle-position {
+    width: 175px;
+    transform: translate(50%, 50%);
+    z-index: 2;
+}
+
+.front-position {
+    width: 100px;
+    transform: translate(50%, 200%);
+    z-index: 3;
+} */
+
+
+/* Add to your stylesheet */
+.anim-photo {
+    transition: all 2s;
+    will-change: transform, width, z-index;
+}
+
+.back-position {
+    height: 150px;
+    width: 175px;
+    transform: translate(100%, 100%);
+    z-index: 1;
+}
+
+.middle-position {
+    height: 225px;
+    width: 200px;
+    transform: translate(40%, 50%);
+    z-index: 2;
+}
+
+.front-position {
+    height: 125px;
+    width: 125px;
+    transform: translate(40%, 200%);
+    z-index: 3;
+}
