@@ -12,7 +12,7 @@ const frontPhoto = document.querySelector("#photos > div :nth-child(3)");
 // Rotate the three classes across the three elements
 (function initRotatingPositions() {
   const positions = ["front-position", "middle-position", "back-position"];
-  const elems = [backPhoto, middlePhoto, frontPhoto].filter(Boolean);
+  const elems = [frontPhoto, middlePhoto, backPhoto].filter(Boolean);
 
   if (elems.length < 3) {
     console.warn("Expected 3 elements inside #photos > div");

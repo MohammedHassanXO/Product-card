@@ -1,49 +1,109 @@
 @import "tailwindcss";
 
 
-
-/* .back-position {
-    width: 150px;
-    transform: translate(120%, 90%);
-    z-index: 1;
-}
-
-.middle-position {
-    width: 175px;
-    transform: translate(50%, 50%);
-    z-index: 2;
-}
-
-.front-position {
-    width: 100px;
-    transform: translate(50%, 200%);
-    z-index: 3;
-} */
-
-
-/* Add to your stylesheet */
 .anim-photo {
     transition: all 2s;
-    will-change: transform, width, z-index;
+    will-change: top, right, height, width, z-index;
 }
 
 .back-position {
     height: 150px;
     width: 175px;
-    transform: translate(100%, 100%);
+    top: 15vh;
+    right: 5vw;
     z-index: 1;
 }
 
 .middle-position {
     height: 225px;
     width: 200px;
-    transform: translate(40%, 50%);
+    top: 10vh;
+    right: 25vw;
     z-index: 2;
 }
 
 .front-position {
     height: 125px;
     width: 125px;
-    transform: translate(40%, 200%);
+    top: 30vh;
+    right: 60vw;
     z-index: 3;
+}
+
+@media screen and (min-width: 640px) and (max-width: 768px){
+    .back-position {
+    height: 150px;
+    width: 175px;
+    top: 15vh;
+    right: 2vw;
+    z-index: 1;
+}
+
+.middle-position {
+    height: 225px;
+    width: 200px;
+    top: 10vh;
+    right: 12vw;
+    z-index: 2;
+}
+
+.front-position {
+    height: 125px;
+    width: 125px;
+    top: 27vh;
+    right: 27vw;
+    z-index: 3;
+}
+}
+
+@media screen and (min-width: 769px) and (max-width: 1199px){
+    .back-position {
+    height: 150px;
+    width: 175px;
+    top: 15vh;
+    right: 7vw;
+    z-index: 1;
+}
+
+.middle-position {
+    height: 225px;
+    width: 200px;
+    top: 10vh;
+    right: 15vw;
+    z-index: 2;
+}
+
+.front-position {
+    height: 125px;
+    width: 125px;
+    top: 30vh;
+    right: 30vw;
+    z-index: 3;
+}
+}
+
+@media screen and (min-width: 1200px){
+    .back-position {
+    height: 200px;
+    width: 200px;
+    top: 10vh;
+    right: 5vw;
+    z-index: 1;
+}
+
+.middle-position {
+    height: 275px;
+    width: 275px;
+    top: 5vh;
+    right: 12vw;
+    z-index: 2;
+}
+
+.front-position {
+    height: 150px;
+    width: 150px;
+    top: 25vh;
+    right: 25vw;
+    z-index: 3;
+}
 }
