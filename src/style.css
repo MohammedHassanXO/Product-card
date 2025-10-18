@@ -1,9 +1,21 @@
 @import "tailwindcss";
 
 
+@keyframes fade-out-in {
+    0%{
+        opacity: 1;
+    }
+    40%{
+        opacity: 0.6;
+    }
+    80%{
+        opacity: 1;
+    }
+}
+
 .anim-photo {
     transition: all 2s;
-    will-change: top, right, height, width, z-index;
+    will-change: top, right, height, width, z-index, opacity;
 }
 
 .back-position {
@@ -11,6 +23,7 @@
     width: 175px;
     top: 15vh;
     right: 5vw;
+    animation: fade-out-in 4s linear infinite;
     z-index: 1;
 }
 
@@ -19,6 +32,7 @@
     width: 200px;
     top: 10vh;
     right: 25vw;
+    animation: fade-out-in 4s linear infinite;
     z-index: 2;
 }
 
@@ -27,6 +41,7 @@
     width: 125px;
     top: 30vh;
     right: 60vw;
+    animation: fade-out-in 4s linear infinite;
     z-index: 3;
 }
 
@@ -36,6 +51,7 @@
     width: 175px;
     top: 15vh;
     right: 2vw;
+    animation: fade-out-in 4s linear infinite;
     z-index: 1;
 }
 
@@ -44,6 +60,7 @@
     width: 200px;
     top: 10vh;
     right: 12vw;
+    animation: fade-out-in 4s linear infinite;
     z-index: 2;
 }
 
@@ -52,6 +69,7 @@
     width: 125px;
     top: 27vh;
     right: 27vw;
+    animation: fade-out-in 4s linear infinite;
     z-index: 3;
 }
 }
@@ -62,6 +80,7 @@
     width: 175px;
     top: 15vh;
     right: 7vw;
+    animation: fade-out-in 4s linear infinite;
     z-index: 1;
 }
 
@@ -70,6 +89,7 @@
     width: 200px;
     top: 10vh;
     right: 15vw;
+    animation: fade-out-in 4s linear infinite;
     z-index: 2;
 }
 
@@ -78,6 +98,7 @@
     width: 125px;
     top: 30vh;
     right: 30vw;
+    animation: fade-out-in 4s linear infinite;
     z-index: 3;
 }
 }
@@ -88,6 +109,7 @@
     width: 200px;
     top: 10vh;
     right: 5vw;
+    animation: fade-out-in 4s linear infinite;
     z-index: 1;
 }
 
@@ -96,6 +118,7 @@
     width: 275px;
     top: 5vh;
     right: 12vw;
+    animation: fade-out-in 4s linear infinite;
     z-index: 2;
 }
 
@@ -104,6 +127,7 @@
     width: 150px;
     top: 25vh;
     right: 25vw;
+    animation: fade-out-in 4s linear infinite;
     z-index: 3;
 }
 }
